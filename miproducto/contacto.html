@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCHT - Contacto & Soporte de Ciberseguridad</title>
+    <!-- Favicon / Icono de pestaña -->
+    <link rel="icon" href="iconos/logo.png" type="image/png">
+    <!-- Enlace a la librería de íconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Librería oficial para visualizar modelos 3D (.glb) -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <!-- Enlaces a los archivos CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <img src="iconos/logo.png" alt="Logo de ASCHT" width="90">
+        <h1>ASCHT</h1>
+        <p>Tecnologia - Soluciones - Futuro</p>
+    </header>
+
+    <!-- NAVEGACIÓN MULTIPÁGINA -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Mision</a></li>
+            <li><a href="producto.html">Producto</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL: CONTACTO -->
+    <main>
+        <div class="contact-container">
+            
+            <!-- SECCIÓN SUPERIOR: MASCOTA OFICIAL (3D ARRIBA + QR Y TEXTO) -->
+            <div class="ar-mascot-section">
+                <!-- Visor 3D del Búho (Objeto limpio, derecho y sin cuadros de selección) -->
+                <div class="ar-mascot-viewer">
+                    <model-viewer 
+                    src="animacion/buho_robotico_3d.glb" 
+                    alt="Búho Robótico 3D ASCHT" 
+                    orientation="180deg 0deg 0deg"
+                    auto-rotate 
+                    rotation-per-second="30deg"
+                    camera-controls 
+                    camera-orbit="0deg 75deg 105%"
+                    interaction-prompt="none"
+                    loading="eager"
+                    reveal="auto">
+                </model-viewer>
+                </div>
+
+                <div class="ar-mascot-info">
+                    <span class="ar-badge"><i class="fa-solid fa-cube"></i> Mascota Oficial (Realidad Aumentada)</span>
+                    <h3>Búho Robótico ASCHT</h3>
+                    <p>
+                        Representa la inteligencia y vigilancia de nuestra marca. Puede interactuar con él directamente girándolo aquí en la web, o escanear el código QR para visualizarlo en Realidad Aumentada (MyWebAR) desde su dispositivo móvil.
+                    </p>
+                    <div class="qr-box">
+                        <img src="images/Buo-QR.jpeg" alt="QR Realidad Aumentada Búho ASCHT" class="qr-img">
+                        <span class="qr-label">Escanee para ver en AR</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TÍTULO PRINCIPAL DE CONTACTO -->
+            <div class="contact-header">
+                <h2>Canales de Contacto & Respuesta Inmediata</h2>
+                <p>¿Necesita una auditoría de seguridad urgente, cotizar un producto o consultar sobre nuestros servicios? Comuníquese con nuestro equipo técnico.</p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <!-- COLUMNA IZQUIERDA: INFORMACIÓN, UBICACIÓN Y DESARROLLADOR -->
+                <div class="contact-info">
+                    <h3>Información de la Oficina</h3>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Matriz Principal</h4>
+                            <p>Quito, Ecuador</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p>soporte@ascht-security.com<br>contacto@ascht.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Línea Telefónica / WhatsApp</h4>
+                            <p>+593 99 000 0000<br>+593 2 000 0000</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-shield-cat"></i>
+                        <div>
+                            <h4>Centro de Respuesta (SOC)</h4>
+                            <p>Atención de incidentes críticos de ciberseguridad disponible 24/7/365.</p>
+                        </div>
+                    </div>
+
+                    <!-- DATOS DEL DESARROLLADOR -->
+                    <div class="dev-section-box">
+                        <h4 style="color: #4da6ff; margin-bottom: 8px;"><i class="fa-solid fa-code"></i> Datos del Desarrollador</h4>
+                        <p style="margin: 3px 0; color: #ffffff;"><strong>Nombre:</strong> Andres Chiluisa</p>
+                        <p style="margin: 3px 0; color: #ffffff;"><strong>Empresa:</strong> ASCHT</p>
+                        <p style="margin-top: 10px;">
+                            <a href="https://www.linkedin.com/in/andr%C3%A9s-chiluisa-39b934223/" target="_blank" rel="noopener noreferrer" style="color: #00ff88; text-decoration: underline;">Ver perfil de LinkedIn</a> 
+                            <span style="color: #ffffff;"> | </span>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" style="color: #00ff88; text-decoration: underline;">Ver perfil de GitHub</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DERECHA: FORMULARIO DE CONTACTO -->
+                <div class="contact-form-wrapper">
+                    <h3>Envíenos su Mensaje</h3>
+                    <form action="#" method="POST">
+                        
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo o Empresa:</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez / Empresa S.A.">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto / Servicio de Interés:</label>
+                            <select id="asunto" name="asunto">
+                                <option value="cotizacion">Cotización de Producto (SecureBox / Pentest Suite)</option>
+                                <option value="auditoria">Auditoría de Red / Ethical Hacking</option>
+                                <option value="incidente">Reporte de Incidente de Seguridad (Emergencia)</option>
+                                <option value="otro">Consulta General</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describa los requerimientos técnicos de su proyecto..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- PIE DE PAGINA CON REDES SOCIALES -->
+    <footer>
+        <ul class="social-menu">
+            <li class="facebook">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+            </li>
+            <li class="instagram">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </li>
+            <li class="tiktok">
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-tiktok"></i> TikTok
+                </a>
+            </li>
+        </ul>
+        <p style="margin-top: 15px; font-size: 0.85rem;">
+            &copy; 2026 ASCHT. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>

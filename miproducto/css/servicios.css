@@ -1,0 +1,150 @@
+/* ESTILOS ESPECÍFICOS PARA LA SECCIÓN DE SERVICIOS AVANZADOS */
+.services-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(13, 27, 42, 0.9), rgba(27, 38, 59, 0.8));
+    border-radius: 12px;
+    border: 1px solid rgba(77, 166, 255, 0.2);
+}
+
+.services-header h2 {
+    font-size: 2.2rem;
+    color: #00ff88;
+    margin-bottom: 0.8rem;
+}
+
+.services-header p {
+    font-size: 1.05rem;
+    color: #d1d5db;
+    line-height: 1.7;
+}
+
+/* Bloques extensos de visión futura */
+.future-vision-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid #00ff88;
+    border-radius: 0 12px 12px 0;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.future-vision-card h3 {
+    font-size: 1.6rem;
+    color: #4da6ff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.future-vision-card p {
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    font-size: 0.98rem;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.services-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.services-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00ff88;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Cuadrícula de Servicios Especializados */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.service-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 1.8rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88;
+}
+
+.service-box i {
+    font-size: 2.2rem;
+    color: #00ff88;
+    margin-bottom: 1rem;
+}
+
+.service-box h4 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.service-box p {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+/* Llamado a la acción institucional */
+.cta-banner {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(90deg, rgba(0, 82, 212, 0.3), rgba(67, 100, 247, 0.3));
+    border-radius: 12px;
+    border: 1px solid #4364f7;
+}
+
+.cta-banner h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.cta-banner p {
+    color: #d1d5db;
+    margin-bottom: 1.8rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-cta {
+    display: inline-block;
+    background: linear-gradient(90deg, #0052d4, #4364f7, #6fb1fc);
+    color: #ffffff !important;
+    padding: 14px 32px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(67, 100, 247, 0.4);
+}

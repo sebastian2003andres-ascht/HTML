@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCHT - Productos de Ciberseguridad & Ethical Hacking</title>
+    <!-- Favicon / Icono de pestaña -->
+    <link rel="icon" href="iconos/logo.png" type="image/png">
+    <!-- Enlace a la librería de íconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Librería oficial para visualizar modelos 3D (.glb) -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/producto.css">
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <img src="iconos/logo.png" alt="Logo de ASCHT" width="90">
+        <h1>ASCHT</h1>
+        <p>Tecnologia - Soluciones - Futuro</p>
+    </header>
+
+    <!-- NAVEGACIÓN MULTIPÁGINA -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Mision</a></li>
+            <li><a class="active" href="producto.html">Producto</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL: SHOWROOM DE HACKING ÉTICO -->
+    <main>
+        <div class="showroom-container">
+            
+            <!-- PRODUCTO ESTRELLA / HERRAMIENTA PRINCIPAL -->
+            <div class="hero-product">
+                <div class="hero-details">
+                    <span class="tag-flagship">Licencia Platinum 2026</span>
+                    <h2 class="hero-title">ASCHT RedTeam Pentest Suite</h2>
+                    <p class="hero-subtitle">Plataforma Integral de Auditoría & Hacking Ético</p>
+                    <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6;">
+                        Suite avanzada de simulación de ciberataques, análisis automatizado de vulnerabilidades y pruebas de penetración en infraestructuras corporativas críticas.
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-value">0-Day</span>
+                            <span class="spec-label">Detección</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-value">OWASP Top 10</span>
+                            <span class="spec-label">Cobertura</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-value">24/7</span>
+                            <span class="spec-label">Soporte SOC</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-price-box">
+                        <span class="price-now">$1,020.00</span>
+                        <span class="price-before">$1,200.00</span>
+                    </div>
+
+                    <a href="contacto.html" class="btn-action-primary">
+                        Solicitar Demostración / Cotización
+                    </a>
+                </div>
+
+                <div class="hero-media">
+                    <model-viewer 
+                        src="animacion/ASCHT_HACKING_logo_3D.glb" 
+                        alt="Modelo 3D ASCHT RedTeam Pentest Suite" 
+                        orientation="180deg 0deg 0deg"
+                        camera-orbit="0deg 90deg 85%"
+                        field-of-view="25deg"
+                        auto-rotate 
+                        auto-rotate-delay="0"
+                        rotation-per-second="-35deg"
+                        camera-controls 
+                        shadow-intensity="1"
+                        style="transform: scaleX(-1);">
+                    </model-viewer>
+                </div>
+            </div>
+
+            <!-- CATÁLOGO DE 4 PRODUCTOS (2 ARRIBA, 2 ABAJO) -->
+            <h3 class="section-title">Soluciones de Auditoría & Hacking Ofensivo</h3>
+            
+            <div class="catalog-grid">
+                
+                <!-- Producto 1: ASCHT NetAudit Appliance -->
+                <div class="card-model">
+                    <div class="card-media">
+                        <span class="card-badge">Hardware Hacking</span>
+                        <model-viewer 
+                            src="animacion/ASCHT_router_3D.glb" 
+                            alt="Modelo 3D ASCHT NetAudit Appliance" 
+                            orientation="180deg 0deg 0deg"
+                            camera-orbit="0deg 90deg 85%"
+                            field-of-view="25deg"
+                            auto-rotate 
+                            auto-rotate-delay="0"
+                            rotation-per-second="35deg"
+                            camera-controls 
+                            shadow-intensity="1">
+                        </model-viewer>
+                    </div>
+                    <div class="card-body">
+                        <h3>ASCHT NetAudit Appliance</h3>
+                        <p style="font-size: 0.85rem; color: #aaa; margin-top: 5px;">
+                            Hardware portátil para análisis de tráfico de red en tiempo real, detección de man-in-the-middle e inspección de paquetes deep packet (DPI).
+                        </p>
+                        <div class="card-price">$360.00 <span style="font-size: 0.8rem; color: #888; text-decoration: line-through;">$450.00</span></div>
+                        <a href="contacto.html" style="color: #00ff88; font-weight: bold; font-size: 0.9rem; text-decoration: underline;">Ver ficha técnica de hardware &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2: ASCHT Web & API Shield Tool -->
+                <div class="card-model">
+                    <div class="card-media">
+                        <span class="card-badge">Auditoría Móvil & Web</span>
+                        <model-viewer 
+                            src="animacion/ASCHT_cyber_shield_3D.glb" 
+                            alt="Modelo 3D ASCHT Web & API Shield Tool" 
+                            orientation="180deg 0deg 0deg"
+                            camera-orbit="0deg 90deg 85%"
+                            field-of-view="25deg"
+                            auto-rotate 
+                            auto-rotate-delay="0"
+                            rotation-per-second="35deg"
+                            camera-controls 
+                            shadow-intensity="1">
+                        </model-viewer>
+                    </div>
+                    <div class="card-body">
+                        <h3>ASCHT Web & API Shield Tool</h3>
+                        <p style="font-size: 0.85rem; color: #aaa; margin-top: 5px;">
+                            Scanner de vulnerabilidades para aplicaciones web, APIs RESTful y servicios cloud con generación automática de reportes ejecutivos.
+                        </p>
+                        <div class="card-price">$252.00 <span style="font-size: 0.8rem; color: #888; text-decoration: line-through;">$280.00</span></div>
+                        <a href="contacto.html" style="color: #00ff88; font-weight: bold; font-size: 0.9rem; text-decoration: underline;">Ver ficha técnica de software &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3: ASCHT AirGuard Auditor -->
+                <div class="card-model">
+                    <div class="card-media">
+                        <span class="card-badge">Wireless Pentesting</span>
+                        <model-viewer 
+                            src="animacion/ASCHT_wireless_network_3D.glb" 
+                            alt="Modelo 3D ASCHT AirGuard Auditor" 
+                            orientation="180deg 0deg 0deg"
+                            camera-orbit="0deg 90deg 85%"
+                            field-of-view="25deg"
+                            auto-rotate 
+                            auto-rotate-delay="0"
+                            rotation-per-second="35deg"
+                            camera-controls 
+                            shadow-intensity="1">
+                        </model-viewer>
+                    </div>
+                    <div class="card-body">
+                        <h3>ASCHT AirGuard Auditor</h3>
+                        <p style="font-size: 0.85rem; color: #aaa; margin-top: 5px;">
+                            Dispositivo táctico para auditorías de redes Wi-Fi, Bluetooth y radiofrecuencia con inyección de paquetes y deauth automatizado.
+                        </p>
+                        <div class="card-price">$410.00 <span style="font-size: 0.8rem; color: #888; text-decoration: line-through;">$500.00</span></div>
+                        <a href="contacto.html" style="color: #00ff88; font-weight: bold; font-size: 0.9rem; text-decoration: underline;">Ver ficha técnica de wireless &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Producto 4: ASCHT CyberForensic Kit -->
+                <div class="card-model">
+                    <div class="card-media">
+                        <span class="card-badge">Forense Digital</span>
+                        <model-viewer 
+                            src="animacion/ASCHT_digital_forensics_3D.glb" 
+                            alt="Modelo 3D ASCHT CyberForensic Kit" 
+                            orientation="180deg 0deg 0deg"
+                            camera-orbit="0deg 90deg 85%"
+                            field-of-view="25deg"
+                            auto-rotate 
+                            auto-rotate-delay="0"
+                            rotation-per-second="35deg"
+                            camera-controls 
+                            shadow-intensity="1">
+                        </model-viewer>
+                    </div>
+                    <div class="card-body">
+                        <h3>ASCHT CyberForensic Kit</h3>
+                        <p style="font-size: 0.85rem; color: #aaa; margin-top: 5px;">
+                            Suite de herramientas de adquisición de evidencias, clonación de unidades bloqueadas contra escritura y análisis de memoria RAM.
+                        </p>
+                        <div class="card-price">$580.00 <span style="font-size: 0.8rem; color: #888; text-decoration: line-through;">$690.00</span></div>
+                        <a href="contacto.html" style="color: #00ff88; font-weight: bold; font-size: 0.9rem; text-decoration: underline;">Ver ficha técnica forense &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- PIE DE PAGINA CON REDES SOCIALES -->
+    <footer>
+        <ul class="social-menu">
+            <li class="facebook">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+            </li>
+            <li class="instagram">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </li>
+            <li class="tiktok">
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-tiktok"></i> TikTok
+                </a>
+            </li>
+        </ul>
+        <p style="margin-top: 15px; font-size: 0.85rem;">
+            &copy; 2026 ASCHT. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>

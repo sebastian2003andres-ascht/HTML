@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+/* --- VARIABLES DE MODO OSCURO (FONDO GENERAL NEGRO) --- */
+:root {
+    --bg-color: #0f172a;        /* Fondo general de toda la página en negro/azulado oscuro */
+    --card-bg: #1e293b;       /* Fondo gris oscuro para las tarjetas y contenedores */
+    --text-color: #f8fafc;     /* Texto claro general para que resalte sobre fondo oscuro */
+    --accent-color: #ffffff; 
+    --border-color: #334155;   /* Bordes sutiles oscuros */
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+/* Estilo para posicionar el modelo 3D cerca del logo y título */
+.header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-3d-model {
+    position: absolute;
+    right: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 160px;
+    height: 160px;
+    background: transparent;
+}
+
+/* Inversión limpia para corregir letras al revés y boca abajo */
+.header-3d-model model-viewer {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transform: scale(-1, -1);
+}
+
+@media (max-width: 900px) {
+    .header-3d-model {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin-top: 15px;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background: linear-gradient(135deg, #090d16, #0f172a);
+    color: #ffffff;
+    border-bottom: 2px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+
+
+/* --- BARRA DE NAVEGACIÓN --- */
+nav {
+    text-align: center;
+    background-color: #090d16;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--border-color);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; 
+    color: #ffffff;            /* Texto blanco para las pestañas inactivas sobre fondo negro */
+    text-decoration: none;
+    border: 1px solid transparent; 
+    border-radius: 6px 6px 0 0;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #2563eb; 
+    border-color: #2563eb;     
+    color: #ffffff;            
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 2.5rem;
+    background-color: var(--card-bg); /* Fondo gris oscuro para la caja principal */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-color);
+}
+
+article {
+    text-align: center;
+}
+
+/* --- IMAGEN CENTRADA Y AJUSTADA --- */
+article img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- SECCIÓN DE SERVICIOS --- */
+.service-box {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service-box h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-subtitle {
+    color: #94a3b8;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.service-description {
+    text-align: left;
+    background-color: #0f172a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+    margin-bottom: 2rem;
+}
+
+.service-description p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+.btn-service {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.75rem 1.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.btn-service:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* --- SECCIÓN DE DESARROLLADOR / ASIDE --- */
+aside {
+    background-color: #1e293b;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+aside h2 {
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+aside p {
+    color: #cbd5e1;
+    margin: 0.5rem 0;
+}
+
+aside a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 8px;
+    transition: color 0.2s ease;
+}
+
+aside a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+/* --- PIE DE PÁGINA Y REDES SOCIALES --- */
+footer {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background-color: #090d16;
+    color: #94a3b8;
+    border-top: 1px solid var(--border-color);
+    margin-top: 60px;
+}
+
+.social-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social-menu li {
+    display: inline-block;
+    margin: 0 10px;
+    font: 600 15px 'Segoe UI', sans-serif;
+}
+
+.social-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #1e293b;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-menu i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+/* Estilos de color en hover para redes sociales */
+.social-menu li.facebook a:hover {
+    color: #ffffff;
+    background-color: #1877f2;
+    border-color: #1877f2;
+}
+
+.social-menu li.instagram a:hover {
+    color: #ffffff;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border-color: #dc2743;
+}
+
+.social-menu li.tiktok a:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #fe2f75;
+}
+
+.social-menu li.linkedin a:hover {
+    color: #ffffff;
+    background-color: #0a66c2;
+    border-color: #0a66c2;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 20px 10px;
+        padding: 1.5rem;
+    }
+
+    .social-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+}
