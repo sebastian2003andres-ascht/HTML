@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Frutas y Verduras</title>
+    <!-- Enlace correcto a tu archivo de estilos -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <h1>Bienvenidos a SuperFrutas</h1>
+    
+    <h3>Productos Disponibles para la Venta</h3>
+
+    <p>
+        <em>Productos Disponibles para la Venta</em>
+        <div id="cost">Costo: </div>
+    </p>
+
+    <!-- Cajas principales de stock y envio (los span manejan los iconos true/false) -->
+    <div class="message">
+        Existencias en bodega
+        <span id="stock"></span>
+    </div>
+    
+    <div class="message">
+        Enviado a domicilio
+        <span id="envio"></span>
+    </div>
+
+    <div class="message" style="margin-top: 20px;">
+        <strong>Lista de Productos:</strong>
+        <div id="lista-productos"></div>
+    </div>
+
+    <!-- Contenedores para tus scripts dinamicos -->
+    <div id="saludo-container"></div>
+    <div id="cliente-container"></div>
+
+    <!-- Llamado a todos tus scripts ubicados en la carpeta js -->
+    <script src="js/saludo.js"></script>
+    <script src="js/factura.js"></script>
+    <script src="js/stock.js"></script>
+    <script src="js/clientes.js"></script>
+    <script src="js/documento.js"></script>
+
+</body>
+</html>
